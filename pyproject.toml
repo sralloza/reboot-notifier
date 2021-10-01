@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "reboot-notifier"
+version = "1.0.0"
+description = ""
+authors = ["Diego Alloza González <sralloza@gmail.com>"]
+
+[tool.poetry.scripts]
+notify-reboot = "reboot_notifier.main:main"
+
+[tool.poetry.dependencies]
+python = ">=3.7,<3.10"
+pydantic = "^1.8.2"
+requests = "^2.26.0"
+
+[tool.poetry.dev-dependencies]
+black = "^21.9b0"
+isort = "^5.9.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
