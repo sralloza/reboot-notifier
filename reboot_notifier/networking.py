@@ -1,6 +1,8 @@
+"""Networking privision module."""
+
 from requests import Session
 from requests.adapters import HTTPAdapter
-from requests.packages.urllib3.util.retry import Retry
+from urllib3.util.retry import Retry
 
 retry_strategy = Retry(
     total=3,
